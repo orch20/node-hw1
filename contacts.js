@@ -56,7 +56,6 @@ async function addContact(name, email, phone) {
 
     const newContactList = [contact, ...contacts];
     await updateContacts(newContactList);
-
     return contact;
   } catch (error) {
     console.error(error.message);
